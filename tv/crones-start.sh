@@ -1,9 +1,9 @@
-tmux new-session -d -s amazon-tv 'sh amazon.sh'
-tmux new-session -d -s snapdeal-tv 'sh snapdeal.sh'
-tmux new-session -d -s flipkart-tv 'sh flipkart.sh'
-tmux new-session -d -s croma-tv 'sh croma.sh'
-tmux new-session -d -s paytm-tv 'sh paytm.sh'
-tmux new-session -d -s ebay-tv 'sh ebay.sh'
-tmux new-session -d -s infibeam-tv 'sh infibeam.sh'
+tmux new-session -d -s amazon-tv './amazon.sh'
+tmux new-session -d -s snapdeal-tv './snapdeal.sh'
+tmux new-session -d -s flipkart-tv './flipkart.sh'
+tmux new-session -d -s croma-tv './croma.sh'
+tmux new-session -d -s paytm-tv './paytm.sh'
+tmux new-session -d -s ebay-tv './ebay.sh'
+tmux new-session -d -s infibeam-tv './infibeam.sh'
 
 
