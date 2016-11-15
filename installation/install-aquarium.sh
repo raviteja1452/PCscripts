@@ -13,3 +13,5 @@ sudo pip install cookiecutter
 cookiecutter gh:TeamHG-Memex/aquarium
 cd ./aquarium
 sudo docker-compose up
+
+
