@@ -7,6 +7,8 @@ chmod +x /usr/local/bin/docker-compose
 docker-compose --version
 
 sudo cd ~
+export LC_ALL="en_US.UTF-8"
+export LC_CTYPE="en_US.UTF-8"
 sudo pip install cookiecutter
 cookiecutter gh:TeamHG-Memex/aquarium
 cd ./aquarium
