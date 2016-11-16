@@ -16,8 +16,6 @@ sudo apt-get install docker-engine
 sudo service docker start
 sudo docker run hello-world
 sudo pip install cookiecutter
-<<<<<<< HEAD
-=======
+
 sudo apt-get install libmysqlclient-dev
 sudo apt-get install python-pip python-dev libffi-dev libssl-dev libxml2-dev libxslt1-dev libjpeg8-dev zlib1g-dev
->>>>>>> 2c53170183c0dd728a8043b82a1e3e82757f45b5
