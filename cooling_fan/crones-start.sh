@@ -1,7 +1,7 @@
-tmux new-session -d -s amazon-tv './amazon.sh'
-tmux new-session -d -s snapdeal-tv './snapdeal.sh'
-tmux new-session -d -s flipkart-tv './flipkart.sh'
-tmux new-session -d -s paytm-tv './paytm.sh'
-tmux new-session -d -s ebay-tv './ebay.sh'
+tmux new-session -d -s amazon-fan './amazon.sh'
+tmux new-session -d -s snapdeal-fan './snapdeal.sh'
+tmux new-session -d -s flipkart-fan './flipkart.sh'
+tmux new-session -d -s paytm-fan './paytm.sh'
+tmux new-session -d -s ebay-fan './ebay.sh'
 
 
