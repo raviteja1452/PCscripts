@@ -1,6 +1,6 @@
-cd /home/ubuntu/PCScraper/scrapperservice
-source /home/ubuntu/PCScraper/scrapperservice/scrapperservice/bin/activate
+cd /home/neelendra/PCScraper
+source /home/neelendra/PCScraper/scraperservice/bin/activate
 
-PYTHONPATH=/home/ubuntu/PCScraper/scrapperservice python /home/ubuntu/PCScraper/scrapperservice/scheduler/Main.py -c 22 -w 8
+PYTHONPATH=/home/neelendra/PCScraper python /home/neelendra/PCScraper/scheduler/Main.py -c 22 -w 8
 cd ~/PCscripts
 ./end_script.sh
