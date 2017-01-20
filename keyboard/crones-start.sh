@@ -1,9 +1,10 @@
-tmux new-session -d -s amazon-keyboard './amazon.sh'
-tmux new-session -d -s snapdeal-keyboard './snapdeal.sh'
-tmux new-session -d -s flipkart-keyboard './flipkart.sh'
-tmux new-session -d -s croma-keyboard './croma.sh'
-tmux new-session -d -s paytm-keyboard './paytm.sh'
-tmux new-session -d -s ebay-keyboard './ebay.sh'
-tmux new-session -d -s infibeam-keyboard './infibeam.sh'
-
+tmux new-session -d -s amazon-kb './amazon.sh'
+tmux new-session -d -s snapdeal-kb './snapdeal.sh'
+tmux new-session -d -s flipkart-kb './flipkart.sh'
+tmux new-session -d -s croma-kb './croma.sh'
+tmux new-session -d -s paytm-kb './paytm.sh'
+tmux new-session -d -s ebay-kb './ebay.sh'
+tmux new-session -d -s infibeam-kb './infibeam.sh'
+tmux new-session -d -s shopclues-kb './shopclues.sh'
+ 
 

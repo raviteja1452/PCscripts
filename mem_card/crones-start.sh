@@ -1,9 +1,10 @@
-tmux new-session -d -s amazon-memcard './amazon.sh'
-tmux new-session -d -s snapdeal-memcard './snapdeal.sh'
-tmux new-session -d -s flipkart-memcard './flipkart.sh'
-tmux new-session -d -s croma-memcard './croma.sh'
-tmux new-session -d -s paytm-memcard './paytm.sh'
-tmux new-session -d -s ebay-memcard './ebay.sh'
-tmux new-session -d -s infibeam-memcard './infibeam.sh'
-
+tmux new-session -d -s amazon-mc './amazon.sh'
+tmux new-session -d -s snapdeal-mc './snapdeal.sh'
+tmux new-session -d -s flipkart-mc './flipkart.sh'
+tmux new-session -d -s croma-mc './croma.sh'
+tmux new-session -d -s paytm-mc './paytm.sh'
+tmux new-session -d -s ebay-mc './ebay.sh'
+tmux new-session -d -s infibeam-mc './infibeam.sh'
+tmux new-session -d -s shopclues-mc './shopclues.sh'
+ 
 

@@ -1,9 +1,10 @@
-tmux new-session -d -s amazon-laptops './amazon.sh'
-tmux new-session -d -s snapdeal-laptops './snapdeal.sh'
-tmux new-session -d -s flipkart-laptops './flipkart.sh'
-tmux new-session -d -s croma-laptops './croma.sh'
-tmux new-session -d -s paytm-laptops './paytm.sh'
-tmux new-session -d -s ebay-laptops './ebay.sh'
-tmux new-session -d -s infibeam-laptops './infibeam.sh'
-
+tmux new-session -d -s amazon-laptop './amazon.sh'
+tmux new-session -d -s snapdeal-laptop './snapdeal.sh'
+tmux new-session -d -s flipkart-laptop './flipkart.sh'
+tmux new-session -d -s croma-laptop './croma.sh'
+tmux new-session -d -s paytm-laptop './paytm.sh'
+tmux new-session -d -s ebay-laptop './ebay.sh'
+tmux new-session -d -s infibeam-laptop './infibeam.sh'
+tmux new-session -d -s shopclues-laptop './shopclues.sh'
+ 
 

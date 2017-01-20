@@ -5,5 +5,6 @@ tmux new-session -d -s croma-tv './croma.sh'
 tmux new-session -d -s paytm-tv './paytm.sh'
 tmux new-session -d -s ebay-tv './ebay.sh'
 tmux new-session -d -s infibeam-tv './infibeam.sh'
-
+tmux new-session -d -s shopclues-tv './shopclues.sh'
+ 
 
