@@ -4,4 +4,5 @@ tmux kill-session -t flipkart-speaker
 tmux kill-session -t croma-speaker 
 tmux kill-session -t paytm-speaker 
 tmux kill-session -t ebay-speaker
-tmux kill-session -t infibeam-speaker 
+tmux kill-session -t infibeam-speaker
+tmux kill-session -t shopclues-speaker 

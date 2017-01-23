@@ -5,5 +5,6 @@ tmux new-session -d -s croma-speaker './croma.sh'
 tmux new-session -d -s paytm-speaker './paytm.sh'
 tmux new-session -d -s ebay-speaker './ebay.sh'
 tmux new-session -d -s infibeam-speaker './infibeam.sh'
-
+tmux new-session -d -s shopclues-speaker './shopclues.sh'
+ 
 
