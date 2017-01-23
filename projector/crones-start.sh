@@ -5,5 +5,6 @@ tmux new-session -d -s croma-projector './croma.sh'
 tmux new-session -d -s paytm-projector './paytm.sh'
 tmux new-session -d -s ebay-projector './ebay.sh'
 tmux new-session -d -s infibeam-projector './infibeam.sh'
-
+tmux new-session -d -s shopclues-projector './shopclues.sh'
+ 
 
