@@ -5,5 +5,6 @@ tmux new-session -d -s croma-desktop './croma.sh'
 tmux new-session -d -s paytm-desktop './paytm.sh'
 tmux new-session -d -s ebay-desktop './ebay.sh'
 tmux new-session -d -s infibeam-desktop './infibeam.sh'
-
+tmux new-session -d -s shopclues-desktop './shopclues.sh'
+ 
 
