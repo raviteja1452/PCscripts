@@ -5,5 +5,6 @@ tmux new-session -d -s croma-theater './croma.sh'
 tmux new-session -d -s paytm-theater './paytm.sh'
 tmux new-session -d -s ebay-theater './ebay.sh'
 tmux new-session -d -s infibeam-theater './infibeam.sh'
-
+tmux new-session -d -s shopclues-theater './shopclues.sh'
+ 
 

@@ -5,5 +5,6 @@ tmux new-session -d -s croma-router './croma.sh'
 tmux new-session -d -s paytm-router './paytm.sh'
 tmux new-session -d -s ebay-router './ebay.sh'
 tmux new-session -d -s infibeam-router './infibeam.sh'
-
+tmux new-session -d -s shopclues-router './shopclues.sh'
+ 
 
