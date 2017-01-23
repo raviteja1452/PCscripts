@@ -5,5 +5,6 @@ tmux new-session -d -s croma-watch './croma.sh'
 tmux new-session -d -s paytm-watch './paytm.sh'
 tmux new-session -d -s ebay-watch './ebay.sh'
 tmux new-session -d -s infibeam-watch './infibeam.sh'
-
+tmux new-session -d -s shopclues-watch './shopclues.sh'
+ 
 
