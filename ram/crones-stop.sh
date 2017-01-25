@@ -4,4 +4,5 @@ tmux kill-session -t flipkart-ram
 tmux kill-session -t croma-ram 
 tmux kill-session -t paytm-ram 
 tmux kill-session -t ebay-ram
-tmux kill-session -t infibeam-ram 
+tmux kill-session -t infibeam-ram
+tmux kill-session -t shopclues-ram 

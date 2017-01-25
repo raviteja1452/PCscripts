@@ -5,5 +5,6 @@ tmux new-session -d -s croma-ram './croma.sh'
 tmux new-session -d -s paytm-ram './paytm.sh'
 tmux new-session -d -s ebay-ram './ebay.sh'
 tmux new-session -d -s infibeam-ram './infibeam.sh'
-
+tmux new-session -d -s shopclues-ram './shopclues.sh'
+ 
 
