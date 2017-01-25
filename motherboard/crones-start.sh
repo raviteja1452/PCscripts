@@ -3,6 +3,7 @@ tmux new-session -d -s snapdeal-mother './snapdeal.sh'
 tmux new-session -d -s flipkart-mother './flipkart.sh'
 tmux new-session -d -s paytm-mother './paytm.sh'
 tmux new-session -d -s ebay-mother './ebay.sh'
-tmux new-session -d -s infibeam-mother './infibeam.sh'
+tmux new-sessoin -d -s infibeam-mother './infibeam.sh'
+tmux new-sessoin -d -s shopclues-mother './shopclues.sh'
 
 
