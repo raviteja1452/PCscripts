@@ -4,4 +4,5 @@ tmux kill-session -t flipkart-network
 tmux kill-session -t croma-network 
 tmux kill-session -t paytm-network 
 tmux kill-session -t ebay-network
+tmux kill-session -t shopclues-network
 tmux kill-session -t infibeam-network 

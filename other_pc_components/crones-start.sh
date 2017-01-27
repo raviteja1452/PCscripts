@@ -5,5 +5,5 @@ tmux new-session -d -s croma-opc './croma.sh'
 tmux new-session -d -s paytm-opc './paytm.sh'
 tmux new-session -d -s ebay-opc './ebay.sh'
 tmux new-session -d -s infibeam-opc './infibeam.sh'
-
+tmux new-session -d -s shopclues-opc './shopclues.sh'
 

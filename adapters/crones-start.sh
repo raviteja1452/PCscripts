@@ -5,5 +5,5 @@ tmux new-session -d -s croma-adapter './croma.sh'
 tmux new-session -d -s paytm-adapter './paytm.sh'
 tmux new-session -d -s ebay-adapter './ebay.sh'
 tmux new-session -d -s infibeam-adapter './infibeam.sh'
-
+tmux new-session -d -s shopclues-adapter './shopclues.sh'
 

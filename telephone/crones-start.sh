@@ -3,5 +3,5 @@ tmux new-session -d -s snapdeal-telephone './snapdeal.sh'
 tmux new-session -d -s flipkart-telephone './flipkart.sh'
 tmux new-session -d -s paytm-telephone './paytm.sh'
 tmux new-session -d -s ebay-telephone './ebay.sh'
-
+tmux new-session -d -s shopclues-telephone './shopclues.sh'
 

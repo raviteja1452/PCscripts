@@ -4,4 +4,5 @@ tmux kill-session -t flipkart-adapter
 tmux kill-session -t croma-adapter 
 tmux kill-session -t paytm-adapter 
 tmux kill-session -t ebay-adapter
+tmux kill-session -t shopclues-adapter
 tmux kill-session -t infibeam-adapter 

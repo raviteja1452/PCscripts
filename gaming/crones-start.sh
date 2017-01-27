@@ -5,5 +5,5 @@ tmux new-session -d -s croma-game_peripherals './croma.sh'
 tmux new-session -d -s paytm-game_peripherals './paytm.sh'
 tmux new-session -d -s ebay-game_peripherals './ebay.sh'
 tmux new-session -d -s infibeam-game_peripherals './infibeam.sh'
-
+tmux new-session -d -s shopclues_game_peripherals './shopclues.sh'
 

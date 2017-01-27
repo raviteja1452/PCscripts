@@ -4,4 +4,5 @@ tmux kill-session -t flipkart-opc
 tmux kill-session -t croma-opc 
 tmux kill-session -t paytm-opc 
 tmux kill-session -t ebay-opc
+tmux kill-session -t shopclues-opc
 tmux kill-session -t infibeam-opc 
