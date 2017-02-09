@@ -8,7 +8,7 @@ def stopScraper(wId, cId):
     w = open('stop.sh', 'w')
     w.write('')
     w.close()
-    ts.replace('<cId>', str(cId))
+    ts = ts.replace('<cId>', cId)
     if wId == -1:
         for i in range(1,11):
             w = open('stop.sh', 'a')
