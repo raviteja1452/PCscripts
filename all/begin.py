@@ -21,7 +21,7 @@ def beginScraper(wId, cId):
             f.close()
             tsc = ts.replace('<wId>', i);
             os.system(tsc)
-    else
+    else:
         f = open('create.sh', 'w')
         st = st.replace('<wId>', wId);
         f.write(st)
