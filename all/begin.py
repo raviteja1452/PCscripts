@@ -4,30 +4,39 @@ import getopt
 
 
 def beginScraper(wId, cId):
-    ts = "tmux new-session -d -s <wId>-<cId> './create.sh'"
-    st = """ cd /home/pc/PCScraper\n"""
+    ts = "tmux new-session -d -s scrape-<wId>_<cId> './<file>.sh'\n\n"
+    st = """cd /home/pc/PCScraper\n"""
     st += """source /home/pc/PCScraper/scraperservice/bin/activate\n"""
     st += """PYTHONPATH=/home/pc/PCScraper python /home/pc/PCScraper/scheduler/Main.py -w <wId> -c <cId>\n"""
     st += """cd ~/PCscripts\n"""
-    st += """./end_script.sh\n"""
+    st += """./end_script.sh\n\n\n"""
     st = st.replace('<cId>', cId);
     ts = ts.replace('<cId>', cId);
-    
+    fn = "scrape-<wId>_<cId>"
+    w = open('start.sh', 'w')
+    w.write('')
+    w.close()
     if wId == -1:
         for i in range(1,11):
-            f = open('create.sh', 'w')
-            stc = st.replace('<wId>', i);
+            fns = fn.replace('<wId>', str(i)).replace('<cId>',str(i))
+            f = open(fns+'.sh', 'w')
+            stc = st.replace('<wId>', str(i));
             f.write(stc)
             f.close()
-            tsc = ts.replace('<wId>', i);
-            os.system(tsc)
+            w = open('start.sh', 'a')
+            tsc = ts.replace('<wId>', str(i)).replace('<file>',fns)
+            w.write(tsc)
+            w.close()
     else:
-        f = open('create.sh', 'w')
+        fn.replace('<wId>', str(wId)).replace('<cId>',cId)
+        f = open(fn+'.sh', 'w')
         st = st.replace('<wId>', wId);
         f.write(st)
         f.close()
-        ts = ts.replace('<wId>', wId);
-        os.system(ts)
+        w = open('start.sh', 'a')
+        tsc = ts.replace('<wId>', wId).replace('<file>',fn)
+        w.write(tsc)
+        w.close()
 
 
 if __name__ == '__main__':
