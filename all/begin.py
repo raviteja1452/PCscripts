@@ -18,7 +18,7 @@ def beginScraper(wId, cId):
     w.close()
     if wId == -1:
         for i in range(1,11):
-            fns = fn.replace('<wId>', str(i)).replace('<cId>',str(i))
+            fns = fn.replace('<wId>', str(i)).replace('<cId>',cId)
             f = open(fns+'.sh', 'w')
             stc = st.replace('<wId>', str(i));
             f.write(stc)
