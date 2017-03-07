@@ -13,21 +13,19 @@ def auto_schedule():
         fp.write(t)
         r = int(os.popen('tmux ls | grep scrape- -c').read())
         # Priority
-        print r
         if r < threshold:
             start.beginScraper(cId=2, wId=-1)
             start.beginScraper(cId=3, wId=-1)
             start.beginScraper(cId=16, wId=-1)
-            fp.write('\t started scraper for 2,3 and 16')
+            fp.write('\t started scraper for 2,3 and 16 -- Total no of scrapers:'+r)
 
 
         r = int(os.popen('tmux ls | grep scrape- -c').read())
         # Others
         while r < threshold:
-            print r
             if counter not in [2,3,16]:
                 start.beginScraper(cId=counter,wid=-1)
-                fp.write('\t started scraper for '+counter)
+                fp.write('\t started scraper for '+counter+' -- Total no of scrapers:'+r)
             counter = counter % 44 + 1
             r = int(os.popen('tmux ls | grep scrape- -c').read())
 
