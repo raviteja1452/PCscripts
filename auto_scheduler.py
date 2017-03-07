@@ -17,7 +17,7 @@ def auto_schedule():
             start.beginScraper(cId=2, wId=-1)
             start.beginScraper(cId=3, wId=-1)
             start.beginScraper(cId=16, wId=-1)
-            fp.write('\t started scraper for 2,3 and 16 -- Total no of scrapers:'+r)
+            fp.write('\t started scraper for 2,3 and 16 -- Total no of scrapers:'+str(r))
 
 
         r = int(os.popen('tmux ls | grep scrape- -c').read())
@@ -25,7 +25,7 @@ def auto_schedule():
         while r < threshold:
             if counter not in [2,3,16]:
                 start.beginScraper(cId=counter,wid=-1)
-                fp.write('\t started scraper for '+counter+' -- Total no of scrapers:'+r)
+                fp.write('\t started scraper for '+str(counter)+' -- Total no of scrapers:'+str(r))
             counter = counter % 44 + 1
             r = int(os.popen('tmux ls | grep scrape- -c').read())
 
