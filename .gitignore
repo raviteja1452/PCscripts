@@ -1,3 +1,4 @@
 .DS_Store
 .idea/*
 all/*.sh
+shell_scripts/*.sh

@@ -4,7 +4,7 @@ import getopt
 
 
 def stopScraper(wId, cId):
-    ts = "tmux kill-session -t scrape-<wId>_<cId> \n\n"
+    ts = "tmux kill-session -t scrape-<cId>_<wId> \n\n"
     w = open('stop.sh', 'w')
     w.write('')
     w.close()
