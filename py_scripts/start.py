@@ -5,7 +5,7 @@ import getopt
 
 def beginScraper(cId, wId=-1):
 
-    ts = "tmux new-session -d -s scrape-<cId>_<wId> './<file>.sh'\n\n"
+    ts = "tmux new-session -d -s scrape-<cId>_<wId> './shell_scripts/<file>.sh'\n\n"
     st = """cd /home/pc/PCScraper\n"""
     st += """source /home/pc/PCScraper/scraperservice/bin/activate\n"""
     st += """PYTHONPATH=/home/pc/PCScraper python /home/pc/PCScraper/scheduler/Main.py -w <wId> -c <cId>\n"""
@@ -41,7 +41,7 @@ def beginScraper(cId, wId=-1):
         w.write(tsc)
         w.close()
     os.system('chmod -R 777 ./shell_scripts')
-
+    os.system('./shell_scripts/start.sh')
 # if __name__ == '__main__':
 #     argv = sys.argv[1:]
 #     wId = -1
