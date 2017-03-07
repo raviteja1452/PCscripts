@@ -1,5 +1,6 @@
 import os
 import sys
+import time
 import getopt
 
 
@@ -42,6 +43,7 @@ def beginScraper(cId, wId=-1):
         w.close()
     os.system('chmod -R 777 ./shell_scripts')
     os.system('./shell_scripts/start.sh')
+    time.sleep(5)
 # if __name__ == '__main__':
 #     argv = sys.argv[1:]
 #     wId = -1
