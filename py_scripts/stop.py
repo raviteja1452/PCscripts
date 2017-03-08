@@ -18,7 +18,7 @@ def stopScraper(cId, wId=-1):
             w.write(tsc)
             w.close()
     else:
-        w = open('stop.sh', 'a')
+        w = open('./shell_scripts/stop.sh', 'a')
         tsc = ts.replace('<wId>', wId)
         w.write(tsc)
         w.close()
