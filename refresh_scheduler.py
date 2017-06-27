@@ -21,8 +21,8 @@ def refresh_schedule():
         r = int(os.popen("tmux ls | grep refresh- -c").read())
         # Others
         while r < threshold:
+            print counter
             if counter not in [45]:
-                print counter
                 refresh_start.beginScraper(cId=counter)
                 fp.write("\n\t started refresher for " + str(counter) + " -- Total no of refreshers:" + str(r))
             counter = counter % 80 + 1

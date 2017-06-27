@@ -7,7 +7,7 @@ def beginScraper(cId):
 
     st = """cd /home/neelendra/PCScraper2\n"""
     st += """source /home/neelendra/PCScraper2/scraperservice/bin/activate\n"""
-    st += """PYTHONPATH=/home/neelendra/PCScraper2 python /home/neelendra/PCScraper2/scheduler/product_refresher.py -c <cId>\n"""
+    st += """PYTHONPATH=/home/neelendra/PCScraper2 python /home/neelendra/PCScraper2/scripts/product_refresher.py -c <cId>\n"""
 
     fn = "refresh-<cId>"
 
