@@ -21,7 +21,8 @@ def beginScraper(cId):
     f.write(st)
     f.close()
 
-    w = open("./shell_scripts/refresh_start.sh", "a")
+
+    w = open("./shell_scripts/refresh_start.sh", "w")
     tsc = ts.replace("<file>", fn)
     w.write(tsc)
     w.close()
