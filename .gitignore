@@ -1,7 +1,11 @@
+*.out
 .DS_Store
 .idea/*
 all/*.sh
 *.pyc
 all/*.pyc
 py_scripts/*.pyc
+py_scripts/start.pyc
+*.txt
+py_scripts/*.txt
 shell_scripts/*.sh

@@ -3,7 +3,7 @@ import time
 import datetime
 from py_scripts import start
 
-threshold = 80
+threshold = 40
 
 def auto_schedule():
     #fp = open("schedule_log.txt","a")
@@ -16,18 +16,19 @@ def auto_schedule():
         # Priority
         if r < threshold:
             start.beginScraper(cId=2, wId=-1)
-            start.beginScraper(cId=3, wId=-1)
-            start.beginScraper(cId=16, wId=-1)
-            fp.write('\n\t started scraper for 2,3 and 16 -- Total no of scrapers:'+str(r))
+            #start.beginScraper(cId=3, wId=1)
+            #start.beginScraper(cId=16, wId=1)
+            fp.write('\n\t started scraper for 2-- Total no of scrapers:'+str(r))
 
 
         r = int(os.popen('tmux ls | grep scrape- -c').read())
         # Others
         while r < threshold:
-            if counter not in [2,3,16]:
+            if counter not in [45]:
+		print counter 
                 start.beginScraper(cId=counter,wId=-1)
                 fp.write('\n\t started scraper for '+str(counter)+' -- Total no of scrapers:'+str(r))
-            counter = counter % 44 + 1
+            counter = counter % 80 + 1
             r = int(os.popen('tmux ls | grep scrape- -c').read())
 	fp.close()
 	print 'scrapers:',r
