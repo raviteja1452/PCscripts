@@ -27,6 +27,6 @@ def beginScraper(cId):
     w.close()
 
     os.system("chmod -R 777 ./shell_scripts")
-    os.system("./shell_scripts/start.sh")
+    os.system("./shell_scripts/refresh_start.sh")
     time.sleep(5)
 
