@@ -10,9 +10,9 @@ def beginScraper(cId, wId=-1):
     st += """source /home/neelendra/PCScraper2/scraperservice/bin/activate\n"""
     st += """PYTHONPATH=/home/neelendra/PCScraper2 python /home/neelendra/PCScraper2/scheduler/scrape.py -w <wId> -c <cId>\n"""
 
-    st = st.replace('<cId>', str(cId))
+    st = st.replace("<cId>", str(cId))
 
-    ts = ts.replace('<cId>', str(cId))
+    ts = ts.replace("<cId>", str(cId))
 
     fn = "scrape-<cId>_<wId>"
 
@@ -32,7 +32,7 @@ def beginScraper(cId, wId=-1):
             w.close()
     else:
         print wId, cId
-        fn.replace("<wId>", str(wId)).replace("<cId>", str(cId))
+        fn = fn.replace("<wId>", str(wId)).replace("<cId>", str(cId))
         f = open("./shell_scripts/" + fn + ".sh", "w")
         st = st.replace("<wId>", str(wId))
         f.write(st)
